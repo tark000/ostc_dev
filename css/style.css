@@ -183,9 +183,112 @@ a.twitter:hover {
 	background: url('../img/footer_social.png') -71px 8px no-repeat #6a6a6a;
 }
 
-
-
 /* footer end */
 
+/* index slider start */
 
-#ninja-slider.main-slider div.slider-inner { max-width:100%; }
+.index-slider .carousel-inner>.item>img {
+	width: 100%;
+}
+
+.index-slider .carousel-indicators li {
+	display:inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #CCC;
+    font-size:0; /* Non-zero will show the index num */
+    margin:2px 6px;
+    cursor:pointer;
+    border-radius: 0;
+    border: 0;
+}
+
+.index-slider .carousel-indicators li.active {
+	background-color:#fe9900;
+}
+
+
+.index-slider .carousel-control {
+    display:inline-block;
+    width:92px;
+    height:92px;
+    line-height:56px;
+    top: 50%;
+    margin-top:-46px;
+    z-index:10;
+    cursor:pointer;
+    -ms-transform:rotate(45deg);/*IE 9*/
+    -webkit-transform:rotate(45deg);
+    transform: rotate(45deg);
+    backface-visibility:hidden;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    background-image: none;
+    opacity: 1;
+}
+
+.index-slider .carousel-control::before {
+    position: absolute;
+    top: 35px;
+    left: 32px;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    
+}
+.index-slider .carousel-control.left {
+	float: left;
+	margin-left: 36px;
+}
+.index-slider .carousel-control.right {
+	float: right;
+	margin-right: 36px;
+}
+.index-slider .carousel-control.left::before {
+	background: url('../img/index_slider_c_n.png') center no-repeat;
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.index-slider .carousel-control.left:hover::before {
+	background: url('../img/index_slider_prev_c_a.png') center no-repeat;
+}
+
+.index-slider .carousel-control.right::before {
+	background: url('../img/index_slider_next_c_n.png') center no-repeat;
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.index-slider .carousel-control.right:hover::before {
+	background: url('../img/index_slider_c_a.png') center no-repeat;
+}
+
+.positionRelative {
+	position: relative;
+}
+
+.slider-control {
+	position: absolute;
+	top: 50%;
+    margin-top:-46px;
+    width: 100%;
+}
+
+.slide-control-container {
+	position: relative;
+}
+
+.index-slider .carousel-inner::before {
+    background: url('../img/Rectangle2.png') center;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.35;
+    position: absolute;
+    z-index: 2;
+}
+
+/* index slider end */
