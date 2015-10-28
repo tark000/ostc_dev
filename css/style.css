@@ -1,6 +1,6 @@
 
 .container {
-	width: 1110px;
+	max-width: 1110px;
 }
 
 
@@ -14,7 +14,7 @@ a:hover {
 .header-info {
 	background-color:  #0a0a0a;
 	width: 100%;
-	height: 48px;
+	min-height: 48px;
 }
 
 .site-contacts {
@@ -109,6 +109,7 @@ a.twitter:hover {
 	font-size: 20px;
 	line-height: 36px;
 	text-align: left;
+	text-transform: uppercase;
 }
 
 .navbar-nav>li.active>a {
@@ -116,7 +117,181 @@ a.twitter:hover {
 }
 
 .navbar-right {
-	margin-top: 20px;
+	margin-top: 9px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
 }
 
 /* header end */
+
+
+/* footer start*/
+
+.footer-content {
+	padding: 42px 0;
+}
+
+.footer-logo {
+	background: url('../img/Logo_footer.png') center no-repeat;
+	width: 199px;
+	height: 43px;
+	display: inline-block;
+}
+
+.footer-contacts {
+	color:  #c0c0c0;
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	text-align: right;
+	float: right;
+}
+
+.footer-contacts span {
+	font-size: 18px;
+}
+
+.footer-content {
+	background-color: #1f2127;
+}
+
+.footer-social {
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.footer-social a{
+	border-radius: 50%;
+	background-color:  #aaaaaa;
+	width: 34px;
+	height: 33px;
+	display: inline-block;
+	margin: 0 3px;
+}
+
+.facebook-footer {
+	background: url('../img/footer_social.png') 12px 8px no-repeat #6a6a6a;
+}
+
+.twitter-footer {
+	background: url('../img/footer_social.png') -29px 8px no-repeat #6a6a6a;
+}
+
+.skype-footer {
+	background: url('../img/footer_social.png') -71px 8px no-repeat #6a6a6a;
+}
+
+
+
+/* footer end */
+
+
+
+
+
+
+/* jssor slider arrow navigator skin 05 css */
+/*
+.jssora05l                  (normal)
+.jssora05r                  (normal)
+.jssora05l:hover            (normal mouseover)
+.jssora05r:hover            (normal mouseover)
+.jssora05l.jssora05ldn      (mousedown)
+.jssora05r.jssora05rdn      (mousedown)
+*/
+.jssora05l, .jssora05r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('img/a17.png') no-repeat;
+    overflow: hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05l.jssora05ldn { background-position: -250px -40px; }
+.jssora05r.jssora05rdn { background-position: -310px -40px; }
+
+/* jssor slider thumbnail navigator skin 01 css */
+/*
+.jssort01 .p            (normal)
+.jssort01 .p:hover      (normal mouseover)
+.jssort01 .p.pav        (active)
+.jssort01 .p.pdn        (mousedown)
+*/
+.jssort01 .p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+}
+
+.jssort01 .t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.jssort01 .w {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.jssort01 .c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 68px;
+    height: 68px;
+    border: #000 2px solid;
+    box-sizing: content-box;
+    background: url('img/t01.png') -800px -800px no-repeat;
+    _background: none;
+}
+
+.jssort01 .pav .c {
+    top: 2px;
+    _top: 0px;
+    left: 2px;
+    _left: 0px;
+    width: 68px;
+    height: 68px;
+    border: #000 0px solid;
+    _border: #fff 2px solid;
+    background-position: 50% 50%;
+}
+
+.jssort01 .p:hover .c {
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border: #fff 1px solid;
+    background-position: 50% 50%;
+}
+
+.jssort01 .p.pdn .c {
+    background-position: 50% 50%;
+    width: 68px;
+    height: 68px;
+    border: #000 2px solid;
+}
+
+* html .jssort01 .c, * html .jssort01 .pdn .c, * html .jssort01 .pav .c {
+    /* ie quirks mode adjust */
+    width /**/: 72px;
+    height /**/: 72px;
+}
