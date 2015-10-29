@@ -468,6 +468,7 @@ a.all-training-link {
 
 a.corporate-clients {
 	width: 100%;
+	margin-top: 40px;
 	color:  #ffffff;
 	font-size: 26px;
 	font-weight: 400;
@@ -503,3 +504,46 @@ a.all-posts {
 	padding: 0px 20px;
 	text-transform: uppercase;
 }
+/* calendar */
+
+.tooltip-arrow,
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #feb368;} 
+
+.red-tooltip + .tooltip > .tooltip-inner, .red-tooltip + .tooltip > .tooltip-arrow {background-color: #feb368;}
+
+.cal-month-day {
+	height: auto;
+}
+
+.cal-year-box [class*="span"],
+.cal-month-box [class*="cal-cell"] {
+	min-height: 36px;
+}
+
+.cal-month-box .cal-day-today span[data-cal-date] {
+	font-size: 1.2em;
+}
+
+#cal-week-box {
+	display: none !important;
+}
+
+.cal-day-weekend span[data-cal-date], .cal-day-outmonth span[data-cal-date] {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+
+}
+
+.cal-day-outmonth span[data-cal-date] {
+	color:  #783c00;
+	font-size: 16px;
+}
+
+span[data-cal-date] {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 36px;
+}
+/* calendar end */
