@@ -19,3 +19,10 @@ $(document).ready(function ($) {
 
 		var nslider = new NinjaSlider(nsOptions);
     });
+
+var calendar = $("#calendar").calendar(
+    {	
+    	language: 'bg-BG',
+        tmpl_path: "tmpls/",
+        events_source: function () { return []; }
+    });         

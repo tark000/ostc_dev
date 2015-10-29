@@ -6,8 +6,7 @@
     <meta name="description" content="Архив">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/thumbnail-slider.css" rel="stylesheet" type="text/css" />
-    <link href="css/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/calendar.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -95,12 +94,12 @@
 
     <div class="container index-content">
         <article class="col-xs-12 col-sm-9 col-ml-9 cpl-lg-9">
-            <div class="one-news">
-                <img src="img/big_img.png" class="news-img">
-                <div class="news-data">1<sup>th</sup> SEPT</div>
-                <div class="news-title">Courses medical first aid</div>
-                <div class="news-line"></div>
-                <div class="news-text">
+            <div class="one-posts">
+                <img src="img/big_img.png" class="posts-img">
+                <div class="posts-data">1<sup>th</sup> SEPT</div>
+                <div class="posts-title">Courses medical first aid</div>
+                <div class="posts-line"></div>
+                <div class="posts-text">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non augue quis mi finibus elementum. Ut commodo leo purus, nec fringilla augue ultricies sit amet. Pellentesque eget nisl sagittis turpis congue gravida. Nulla aliquet purus nec nunc accumsan maximus. Vivamus sit 
                     amet imperdiet diam. Nam dictum lorem id ante ultricies fermentum. Aliquam non euismod nisi.
@@ -112,16 +111,41 @@
                     Nullam id ligula id urna convallis condimentum. Curabitur nisi purus, ultricies sed tincidunt vitae, volutpat eget felis. Maecenas in volutpat mi, non luctus tortor. In hac habitasse platea dictumst. Morbi non tellus vel ex facilisis egestas in vel tortor. Donec auctor congue dui sed tincidunt.  <a href="#" class="continue">Continue »</a>
                     </p>
                 </div>
-                <div class="news-line"></div>
-                <div class="news-share">
+                <div class="posts-line"></div>
+                <div class="posts-share">
                     <span>Share:</span>
                     <a href="" class="share-facebook"></a>
                     <a href="" class="share-twitter"></a>
                 </div>
             </div>
+            <div class="one-posts">
+                <div class="posts-data">1<sup>th</sup> SEPT</div>
+                <div class="posts-title">Courses medical first aid</div>
+                <div class="posts-line"></div>
+                <div class="posts-text">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non augue quis mi finibus elementum. Ut commodo leo purus, nec fringilla augue ultricies sit amet. Pellentesque eget nisl sagittis turpis congue gravida. Nulla aliquet purus nec nunc accumsan maximus. Vivamus sit 
+                    amet imperdiet diam. Nam dictum lorem id ante ultricies fermentum. Aliquam non euismod nisi.
+                    </p>
+                    <p>
+                    Praesent sit amet ante vel turpis varius pulvinar a ac magna. Phasellus vel congue tellus. Praesent nisi massa, bibendum in libero in, maximus imperdiet orci. Ut dignissim interdum nulla quis facilisis. Nunc at ipsum ornare, pellentesque lorem eget, venenatis nisl. Ut condimentum gravida nisl quis interdum. Curabitur vel ante non neque tincidunt ullamcorper. Mauris pellentesque varius semper. Morbi non quam in eros semper imperdiet vitae eget diam.
+                    </p>
+                    <p>    
+                    Nullam id ligula id urna convallis condimentum. Curabitur nisi purus, ultricies sed tincidunt vitae, volutpat eget felis. Maecenas in volutpat mi, non luctus tortor. In hac habitasse platea dictumst. Morbi non tellus vel ex facilisis egestas in vel tortor. Donec auctor congue dui sed tincidunt.  <a href="#" class="continue">Continue »</a>
+                    </p>
+                </div>
+                <div class="posts-line"></div>
+                <div class="posts-share">
+                    <span>Share:</span>
+                    <a href="" class="share-facebook"></a>
+                    <a href="" class="share-twitter"></a>
+                </div>
+            </div>
+
+            <a href="#" class="all-posts">View All Posts »</a>
         </article>
         <aside class="col-xs-12 col-sm-3 col-ml-3 cpl-lg-3">
-            <div class="calendar"></div>
+            <div id="calendar"></div>
 
             <div class="next-trainings-list">
                 <div class="next-training-title">Next Training List</div>
@@ -130,7 +154,14 @@
                     <div class="training-data">September 20, 2015</div>
                     <div class="training-time">19:00 pm</div>
                     <div class="training-link"><a href="#">www.ostc.com.ua</a></div>
-                    <div class="news-line"></div>
+                    <div class="posts-line"></div>
+                </div>
+                <div class="next-training">
+                    <div class="training-title">Title: “The name of training”.</div>
+                    <div class="training-data">September 20, 2015</div>
+                    <div class="training-time">19:00 pm</div>
+                    <div class="training-link"><a href="#">www.ostc.com.ua</a></div>
+                    <div class="posts-line"></div>
                 </div>
             </div>
             <a href="#" class="all-training-link">view all training »</a>
@@ -176,8 +207,8 @@
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/thumbnail-slider.js" type="text/javascript"></script>
-<script src="js/ninja-slider.js" type="text/javascript"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/calendar.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
