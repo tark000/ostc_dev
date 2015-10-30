@@ -6,7 +6,7 @@
     <meta name="description" content="Архив">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/calendar.css"/>
+    <link rel="stylesheet" href="css/responsive-calendar.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -60,37 +60,7 @@
 
 <div class="main-content">
 	
-    <div id="carousel-example-generic" class="carousel slide index-slider" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img/index_slider.png" alt="...">
-            </div>
-            <div class="item">
-                <img src="img/index_slider.png" alt="...">
-            </div>
-            <div class="item">
-                <img src="img/index_slider.png" alt="...">
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <div class="slider-control">
-            <div class="container slide-control-container">
-            
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
-            </div>
-        </div>
-        
-    </div>
+   
 
     <div class="container index-content">
         <article class="col-xs-12 col-sm-9 col-ml-9 cpl-lg-9">
@@ -118,35 +88,54 @@
                     <a href="" class="share-twitter"></a>
                 </div>
             </div>
-            <div class="one-posts">
-                <div class="posts-data">1<sup>th</sup> SEPT</div>
-                <div class="posts-title">Courses medical first aid</div>
-                <div class="posts-line"></div>
-                <div class="posts-text">
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non augue quis mi finibus elementum. Ut commodo leo purus, nec fringilla augue ultricies sit amet. Pellentesque eget nisl sagittis turpis congue gravida. Nulla aliquet purus nec nunc accumsan maximus. Vivamus sit 
-                    amet imperdiet diam. Nam dictum lorem id ante ultricies fermentum. Aliquam non euismod nisi.
-                    </p>
-                    <p>
-                    Praesent sit amet ante vel turpis varius pulvinar a ac magna. Phasellus vel congue tellus. Praesent nisi massa, bibendum in libero in, maximus imperdiet orci. Ut dignissim interdum nulla quis facilisis. Nunc at ipsum ornare, pellentesque lorem eget, venenatis nisl. Ut condimentum gravida nisl quis interdum. Curabitur vel ante non neque tincidunt ullamcorper. Mauris pellentesque varius semper. Morbi non quam in eros semper imperdiet vitae eget diam.
-                    </p>
-                    <p>    
-                    Nullam id ligula id urna convallis condimentum. Curabitur nisi purus, ultricies sed tincidunt vitae, volutpat eget felis. Maecenas in volutpat mi, non luctus tortor. In hac habitasse platea dictumst. Morbi non tellus vel ex facilisis egestas in vel tortor. Donec auctor congue dui sed tincidunt.  <a href="#" class="continue">Continue »</a>
-                    </p>
+            <form class="sign-up-form">
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon1">Your Name<sup>*</sup></span>
+                    <input type="text" class="form-control" aria-describedby="sizing-addon1">
                 </div>
                 <div class="posts-line"></div>
-                <div class="posts-share">
-                    <span>Share:</span>
-                    <a href="" class="share-facebook"></a>
-                    <a href="" class="share-twitter"></a>
-                </div>
-            </div>
 
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2">Your phone number<sup>*</sup></span>
+                    <input type="text" class="form-control" aria-describedby="sizing-addon2">
+                </div>
+                <div class="posts-line"></div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon3">E-Mail<sup>*</sup></span>
+                    <input type="text" class="form-control" aria-describedby="sizing-addon3">
+                </div>
+                <div class="posts-line"></div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon4">How did you hear about<br />the event?<sup>*</sup></span>
+                    <input type="text" class="form-control" aria-describedby="sizing-addon4">
+                </div>
+                <div class="posts-line"></div>
+                Provide a link to your profile in the social networks  (we could share with you photos and videos from the event)
+                <input type="text" class="form-control" aria-describedby="sizing-addon4">
+                <span class="input-group-addon">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    I want to visit the training another day.
+                </span>
+                <button>SEND</button>
+            </form>
             <a href="#" class="all-posts">View All Posts »</a>
         </article>
         <aside class="col-xs-12 col-sm-3 col-ml-3 cpl-lg-3">
             <div id="calendar"></div>
-
+            <!-- Responsive calendar - START -->
+            <div class="responsive-calendar">
+            <div class="controls">
+                <a class="pull-left" data-go="prev"><div class="btn btn-primary"></div></a>
+                <h4><span data-head-year></span> <span data-head-month></span></h4>
+                <a class="pull-right" data-go="next"><div class="btn btn-primary"></div></a>
+            </div>
+            
+            <div class="days" data-group="days">
+              
+            </div>
+          </div>
+          <!-- Responsive calendar - END -->
             <div class="next-trainings-list">
                 <div class="next-training-title">Next Training List</div>
                 <div class="next-training">
@@ -198,7 +187,8 @@
 	
 	<div class="footer-info">
 		<div class="container">
-
+            <div class="footer-info-left">Privacy Policy - Terms of Use. All rights Reserved <span>OSTC</span></div>
+            <div class="footer-info-right">Design by <span>Katya Dmytruk</span></div>
 		</div>
 	</div>
 </footer>
@@ -207,8 +197,7 @@
 
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/underscore-min.js"></script>
-<script src="js/calendar.min.js"></script>
+<script src="js/responsive-calendar.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

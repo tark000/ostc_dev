@@ -31,19 +31,3 @@ $(document).ready(function ($) {
 
 
     });
-
-// var calendar = $("#calendar").calendar(
-//     {	
-//         tmpl_path: "tmpls/",
-//         events_source: function () { return [
-//         		{
-// 		            "id": 293,
-// 		            "title": 'Title: "The name of training."',
-// 		            "url": "http://example.com",
-// 		            "class": "event-important",
-// 		            "start": 1446157104493, // Milliseconds
-// 		            "end": 1446157109493 // Milliseconds
-// 		        }
-
-//         	]; }
-//     });         

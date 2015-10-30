@@ -1,8 +1,11 @@
 @font-face {
-
     font-family: Myriad Pro; 
-
     src: url(../fonts/myriad-pro/MyriadProRegular.ttf); 
+}
+
+@font-face {
+    font-family: Arial; 
+    src: url(../fonts/Arial-Regular.ttf); 
 }
 
 
@@ -12,6 +15,9 @@ body {
 
 }
 
+.posts-text, .posts-share {
+	font-family: Arial;
+}
 .container {
 	max-width: 1140px;
 }
@@ -40,18 +46,20 @@ a:hover {
 	color:  #aaaaaa;
 	font-size: 12px;
 	letter-spacing: 0.3px;
-	line-height: 24px;
+	line-height: 16px;
 	display: inline-block;
 	padding-left: 20px;
 	background: url('../img/phone.png') 0 center no-repeat;
-	margin-right: 26px;
+	margin-right: 13px;
+	padding-right: 13px;
+	border-right: 1px solid #aaaaaa;
 }
 
 .contact-mail {
 	color:  #aaaaaa;
 	font-size: 12px;
 	letter-spacing: 0.3px;
-	line-height: 24px;
+	line-height: 16px;
 	display: inline-block;
 	padding-left: 20px;
 	background: url('../img/mail.png') 0 center no-repeat;
@@ -127,6 +135,14 @@ a:hover {
 	background-color: transparent;
 }
 
+.navbar-toggle {
+	margin: 24px;
+	background-color: #aaa;
+}
+
+.navbar-toggle .icon-bar {
+	border: 1px solid #ccc;
+}
 /* header end */
 
 
@@ -165,11 +181,41 @@ a:hover {
 	padding-top: 5px;
 }
 
+.footer-info {
+	min-height: 50px;
+	background-color: #0a0a0a;
+}
+
+.footer-info-left {
+	color:  #c0c0c0;
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+}
+
+.footer-info-left span {
+	color:  #ff7f00;
+}
+
+.footer-info-right {
+	color:  #c0c0c0;
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	display: inline-block;
+	float: right;
+	line-height: 50px;
+}
+
+.footer-info-right span {
+	color:  #797979;
+}
 /* footer end */
 
 /* index slider start */
 
-.index-slider .carousel-inner>.item>img {
+.index-slider .carousel-inner>.item img {
 	width: 100%;
 }
 
@@ -263,7 +309,7 @@ a:hover {
 	position: relative;
 }
 
-.index-slider .carousel-inner::before {
+.index-slider .carousel-inner>.item> .img-block::before {
     background: url('../img/Rectangle2.png') center;
     width: 100%;
     height: 100%;
@@ -271,6 +317,45 @@ a:hover {
     opacity: 0.35;
     position: absolute;
     z-index: 2;
+}
+
+.slider-welcome {
+	position: absolute;
+	top: 10%;
+	color:  #ffffff;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+}
+
+.slider-text {
+	position: absolute;
+	top: 37%;
+	z-index: 5;
+	width: 100%;
+	color:  #ffffff;
+	font-size: 54px;
+	letter-spacing: 1.342px;
+	line-height: 58px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.slider-text span {
+	color:  #fe9900;
+}
+.slider-small-text {
+	position: absolute;
+	bottom: 20%;
+	z-index: 5;
+	width: 100%;
+	font-family: OpenSans;
+	color:  #ffffff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 24px;
 }
 
 /* index slider end */
@@ -352,7 +437,7 @@ a.share-twitter:hover {
 .posts-data {
 	color:  #ffffff;
 	font-size: 24px;
-	padding: 0px 10px;
+	padding: 0px 18px;
 	background-color:  #ff7f00;
 	line-height: 45px;
 	display: inline-block;
@@ -419,9 +504,9 @@ a.continue {
 .next-training-title {
 	color:  #454545;
 	font-size: 23px;
-	line-height: 40px;
+	line-height: 29px;
 	text-transform: uppercase;
-	margin: 20px 0;
+	margin: 15px 0;
 }
 
 .next-training div{
@@ -506,6 +591,48 @@ a.all-posts {
 }
 /* calendar */
 
+.responsive-calendar {
+	background-color:  #ff7f00;
+}
 
+.responsive-calendar .btn-primary {
+	background: transparent;
+	border: 0;
+}
+.responsive-calendar .pull-left .btn-primary{
+	background: url('../img/callendar_Arrow_left.png') center no-repeat;
+}
 
+.responsive-calendar .pull-right .btn-primary{
+	background: url('../img/callendar_Arrow_right.png') center no-repeat;
+}
+
+.responsive-calendar .btn.active, .responsive-calendar .btn:active{
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.0);
+ 	box-shadow: inset 0 3px 5px rgba(0,0,0,.0); 
+}
+
+.responsive-calendar .controls {
+	background: #fff;
+	color:  #7d7d7d;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	height: 50px;
+	padding: 17px 0;
+}
+
+.responsive-calendar .day.active a:hover, .responsive-calendar .day a:hover, .responsive-calendar .day.active a{
+	background-color: #feb368;
+}
+
+.responsive-calendar .day a {
+	color:  #ffffff;
+	font-size: 16px;
+}
+
+.responsive-calendar .day.not-current a {
+	color:  #783c00;
+	font-size: 16px;
+}
 /* calendar end */

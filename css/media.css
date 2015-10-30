@@ -8,7 +8,9 @@
 }
 
 @media (max-width: 992px) {
-
+	.navbar-nav>li>a {
+		padding: 10px 10px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -27,5 +29,38 @@
 
 	.footer-content {
 		padding: 20px 0;
+	}
+
+	.footer-info-left, .footer-info-right {
+		width: 100%;
+		text-align: center;
+	}
+
+	.posts-data {
+		margin-bottom: 10px;
+	}
+
+	a.all-posts {
+		margin-bottom: 10px;
+	}
+
+	.index-slider .carousel-control.right::before, .index-slider .carousel-control.left::before {
+		top: 10px;
+		left: 7px;
+	}
+
+	.index-slider .carousel-control.right, .index-slider .carousel-control.left {
+		width: 44px;
+		height: 44px;
+		margin-top: 22px;
+	}
+
+	.navbar-nav>li>a {
+		padding: 0 10px;
+	}
+
+	.slider-text {
+		font-size: 32px;
+		line-height: 32px;
 	}
 }
