@@ -1,19 +1,17 @@
-
 var nsOptions =
 {
     sliderId: "ninja-slider",
-    transitionType: "slide", //"fade", "slide", "zoom", "kenburns 1.2" or "none"
-    autoAdvance: true,
-    delay: 500000,
-    transitionSpeed: 0,
-
+    transitionType: "fade", //"fade", "slide", "zoom", "kenburns 1.2" or "none"
+    autoAdvance: false, //If autoAdvance is required, don't set this to true. You can set the autoAdvance of the Thumbnail Slider to true because the "before" callback function listed below has been set to let this slider to be driven by the Thumbnail Slider.
+    delay: "default",
+    transitionSpeed: 400,
+    aspectRatio: "2:1",
     initSliderByCallingInitFunc: false,
     shuffle: false,
     startSlideIndex: 0, //0-based
     navigateByTap: true,
-    pauseOnHover: false,
     keyboardNav: true,
-    before: null,
+    before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider != "undefined") mcThumbnailSlider.display(nextIdx); },
     license: "mylicense"
 };
 
