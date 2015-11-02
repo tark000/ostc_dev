@@ -29,33 +29,11 @@ $(document).ready(function ($) {
         	}
         });
 	
-	$("#carousel-example-generic").swiperight(function() {
-      $(this).carousel('prev');
-    });
-   $("#carousel-example-generic").swipeleft(function() {
-      $(this).carousel('next');
-   });
+
+	$("#carousel-example-generic").carousel();
+	$("#myCarousel").carousel();
+	$("#carousel-media").carousel();
+	$("#carousel-gallery").carousel();
 
 
-   $("#myCarousel").swiperight(function() {
-      $(this).carousel('prev');
-    });
-   $("#myCarousel").swipeleft(function() {
-      $(this).carousel('next');
-   });
-
-   $("#carousel-media").swiperight(function() {
-      $(this).carousel('prev');
-    });
-   $("#carousel-media").swipeleft(function() {
-      $(this).carousel('next');
-   });
-
-   $("#carousel-gallery").swiperight(function() {
-      $(this).carousel('prev');
-    });
-   $("#carousel-gallery").swipeleft(function() {
-      $(this).carousel('next');
-   });
-
-    });
+});
