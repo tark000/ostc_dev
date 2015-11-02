@@ -123,6 +123,10 @@ a, .trainings-title, .carousel-control::before, {
 	padding: 10px 28px;
 }
 
+.navbar-nav>li>a:hover {
+	color: #ffffff;
+}
+
 .navbar-nav>li:last-child>a {
 	padding-right: 0;
 }
