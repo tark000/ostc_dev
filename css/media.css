@@ -24,7 +24,7 @@
 	.index-slider .carousel-control.right, .index-slider .carousel-control.left, .media-slider .carousel-control.left, .media-slider .carousel-control.right {
 		width: 44px;
 		height: 44px;
-		margin-top: -8px;
+		margin-top: 18px;
 	}
 	
 	.media-slider-control {
@@ -103,4 +103,23 @@
 		display: block;
 	}
 
+	.media-slider-control {
+		padding-top: 20px;
+	}
+
+	.header-logo {
+		margin-left: 10px;
+	}
+
+}
+
+@media (max-width: 460px) { 
+	.site-contacts {
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-social {
+		float: left;
+	}
 }
