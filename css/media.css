@@ -111,6 +111,26 @@
 		margin-left: 10px;
 	}
 
+	.carousel-indicators {
+		display: none;
+	}
+
+	.slider-control {
+		display: none;
+	}
+
+	.slider-small-text {
+		margin-bottom: -5%;
+	}
+
+	.gallery-slider .carousel-control{
+		display: none;
+	}
+
+	.gallery-slider {
+		margin-bottom: 20px;
+	}
+
 }
 
 @media (max-width: 460px) { 

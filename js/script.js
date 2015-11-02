@@ -28,6 +28,34 @@ $(document).ready(function ($) {
             "2015-11-12": {"title": "test"}
         	}
         });
+	
+	$("#carousel-example-generic").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#carousel-example-generic").swipeleft(function() {
+      $(this).carousel('next');
+   });
 
+
+   $("#myCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+
+   $("#carousel-media").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#carousel-media").swipeleft(function() {
+      $(this).carousel('next');
+   });
+
+   $("#carousel-gallery").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#carousel-gallery").swipeleft(function() {
+      $(this).carousel('next');
+   });
 
     });
